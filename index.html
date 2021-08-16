@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather APP | Vanilla JavaScript</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <div class="search">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Search City Name Here..." id='city'>
+                    <button class="fas fa-search" id='search-btn'></button>
+                </div>
+            </div>
+            <div class="main-body">
+                <div class="temperature-container">
+                    <i class="fas fa-temperature-low icon"></i>
+                    <div class="city-name" id='city-name'>CITY NAME</div>
+                    <div class="temperature">
+                        <div class="farenheit" id='f-temp'>00°F</div>
+                        <div class="celcuis" id='c-temp'>00°C</div>
+                    </div>
+                </div>
+                <div class="additional-info">
+                    <div class="weather info-container">
+                        <div class="info-name">
+                            Weather
+                        </div>
+                        <div class="info" id='weather'>Sunny</div>
+                        
+                        <i class="far fa-sun icon" id='icon'></i>
+
+                    </div>
+                    <div class="weather info-container">
+                        <i class="fas fa-tint icon"></i>
+                        <div class="info-name">
+                            Humidity
+                        </div>
+                        <div class="info" id='humidity'>00%</div>
+                    </div>
+                    <div class="weather info-container">
+                        <i class="fas fa-hand-holding-water icon"></i>
+                        <div class="info-name">
+                            Pressure
+                        </div>
+                        <div class="info" id='percipitation'>00%</div>
+                    </div>
+                    <div class="weather info-container">
+                        <i class='icon fas fa-wind'></i>
+                        <div class="info-name">
+                            Wind
+                        </div>
+                        <div class="info" id='wind-speed'>00 KM/HR</div>
+                    </div>
+                </div>
+              
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
