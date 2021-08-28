@@ -40,7 +40,7 @@ search_btn.onclick = ()=>{
             tempInF.innerText = `${Math.round(farenheit)}°F`;
             tempInC.innerText = `${celcius}°C`;
             weatherType.innerText = RESPONSE['weather']['0']['main'];
-            windSpeed.innerText = `${RESPONSE['wind']['speed']*10} KM/HR`
+            windSpeed.innerText = `${RESPONSE['wind']['speed']*10.toFixed(1)} KM/HR`
             console.log(RESPONSE);
             
             humidity.innerText = `${RESPONSE['main']['humidity']}%`
